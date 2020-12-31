@@ -1,9 +1,9 @@
 import React from 'react'
 import Carousel from 'react-elastic-carousel';
-import {  Container, Heading, Card , TestiMonialImg} from '../MenuSection/MenuElement';
+import { Heading } from '../MenuSection/MenuElement';
 import '../MenuSection/styles.css'
-import {TestimonialRow, TestimonialWrapper, Column1, Column2, TextWrapper, ImgWrap, Img, TestimonialContainer  } from './TestimonialElement';
-import feedback from '../../images/feedback3.svg'
+import {TestimonialRow, TestimonialWrapper, Column1, Column2, TextWrapper, ImgWrap, Img, TestimonialContainer , TestimonialCard , TestiMonialImg  } from './TestimonialElement';
+import feedback from '../../images/reviews.svg'
 
 
 const breakPoints = [
@@ -26,9 +26,9 @@ const Testimonial = ({heading , data }) => {
               <Carousel breakPoints={breakPoints}>
                 {data.map((testimonial, index) => {
                   return (
-                    <Card key={index}>
+                    <TestimonialCard key={index}>
                     <TestiMonialImg src={testimonial.img} alt={testimonial.alt} />
-                    </Card>
+                    </TestimonialCard>
                     )
                  })}
               </Carousel> 

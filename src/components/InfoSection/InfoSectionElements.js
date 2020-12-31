@@ -50,6 +50,8 @@ export const TextWrapper = styled.div `
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+  
+
 `
 
 export const Heading = styled.h1 ` 
@@ -58,10 +60,11 @@ export const Heading = styled.h1 `
   line-height: 1.1;
   font-weight: 900;
   color: ${({lighText}) => (lighText ? '#222831' : '#eeeeee')};
-  text-shadow: ${({shadow}) => (shadow ? '2px 2px #ff0021' : 'none')};
+  text-shadow: ${({shadow}) => (shadow ? '2px 2px #ed9121' : 'none')};
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+    text-align: center;
   }
 `
 
@@ -71,11 +74,33 @@ export const Subtitle = styled.p `
   font-size: 18px;
   line-height: 24px;
   color: ${({darkText}) => (darkText ? '#222831' : '#eeeeee')};
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
+`
+
+export const Location = styled.p `
+  max-width: 440px;
+  margin-bottom: 35px;
+  margin-top: -35px;
+  font-size: 10px;
+  line-height: 24px;
+  color: ${({darkText}) => (darkText ? '#222831' : '#eeeeee')};
+  display: ${({visible}) => (visible ? 'block' : 'none')};
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 `
 
 export const BtnWrap = styled.div `
   display: flex;
-  justify-content:flex-start
+  justify-content:flex-start;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 `
 export const ImgWrap = styled.div `
   max-width: 555px;

@@ -20,7 +20,7 @@ const HeroSection = () => {
   };
 
   const btnClick = () => {
-    window.open("https://www.google.com", '_blank');
+    window.open("https://www.facebook.com/kcuisineph/", '_blank');
   }
 
   return (
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <HeroItems>
         <HeroH1>SATISFY YOUR KOREAN CRAVINGS</HeroH1>
         <HeroP>The authenticity of the taste is our concern in giving you the taste of korea. </HeroP>
-        <Button component={Link} to='//www.google.com/' onClick={btnClick} onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' fontBig='true'>
+        <Button component={Link} to='//www.facebook.com/kcuisineph/' onClick={btnClick} onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' fontBig='true'>
             Pre-Order {hover ? <ArrowForward /> : <ArrowRight />}
         </Button>
       </HeroItems>

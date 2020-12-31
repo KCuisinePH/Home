@@ -1,6 +1,6 @@
 import promo from '../../images/promo.png'
-import order from '../../images/svg-4.svg'
-import delivery from '../../images/svg-6.svg'
+import order from '../../images/how_to_order.svg'
+import delivery from '../../images/delivery.svg'
 
 
 export const homeObjOne = {
@@ -10,6 +10,7 @@ export const homeObjOne = {
   lightTextDesc: true,
   headline: 'Promo',
   shadow: true,
+  visible: false,
   description: 'Buy 3 Japchae and Get 1 Free Honey Garlic Chicken.',
   buttonLabel: 'Pre Order',
   imgStart: true,
@@ -29,6 +30,7 @@ export const howToOrder = {
   lightTextDesc: true,
   headline: 'How To Order',
   shadow: false,
+  visible: false,
   description: `Order Now via Facebook Messenger `,
   buttonLabel: 'Message us',
   imgStart:false,
@@ -49,6 +51,7 @@ export const freeDelivery = {
   headline: 'Free Delivery',
   shadow: false,
   description: `Stay at Home. We will deliver to your door.`,
+  visible: true,
   buttonLabel: 'Message us',
   imgStart:true,
   imgURL: delivery,

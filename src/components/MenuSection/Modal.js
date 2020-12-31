@@ -1,6 +1,4 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
-import ReactDOM from 'react-dom'
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 
@@ -14,6 +12,7 @@ background-color: #FFF;
 border-radius: 15px;
 overflow: hidden;
 z-index: 1000;
+opacity: 1;
 
 @media screen and (max-width: 1100px) {
     left:10%;
@@ -144,40 +143,34 @@ const CloseModalButton = styled(MdClose)`
   height: 32px;
   padding: 0;
   z-index: 10;
+  color: #222831;
 
   @media screen and (max-width: 480px) {
   top:12px;
   right: 10px;
-  width: 15px;
-  height: 15px;
-  color: #eeeeee;
+  width: 32px;
+  height: 32px;
   }
 `;
-
+ 
 const Modal = ({open, children, onClose , data}) => {
-
-  const animation = useSpring({
-    config: {
-      duration: 250
-    },
-    opacity: open ? 1 : 0,
-    transform: open ? `translate (-25%, -25%)`: `translate (-50%, -50%)`
-  })
   
   if (!open) return null
 
+  const btnClick = () => {
+    window.open("https://www.facebook.com/kcuisineph/", '_blank');
+  }
   
-  return ReactDOM.createPortal (
+  return (
     <>
     <OverlayStyles onClick={onClose} />
-    <animated.div style={animation}>
     <ModalBackground>
       <ModalWrapper>
       <ModalImg src={data.img} alt={data.alt} />
        <ModalContent>
          <h1>{data.modalHeading}</h1>
          <p>{data.modalDescription}</p>
-         <button >Order Now</button>
+         <button onClick={btnClick}>Order Now</button>
        </ModalContent> 
        <CloseModalButton
                 aria-label='Close modal'
@@ -186,9 +179,7 @@ const Modal = ({open, children, onClose , data}) => {
       </ModalWrapper>
       
     </ModalBackground>
-    </animated.div>
-    </>,
-    document.getElementById('portal')
+    </>
     )
 }
 

@@ -85,7 +85,7 @@ export const NavLinks = styled(LinkScroll) `
   font-family: Montserrat;
 
   &.active {
-    border-bottom: 3px solid #00adb5;
+    border-bottom: 3px solid #ed9121;
   }
 `
 

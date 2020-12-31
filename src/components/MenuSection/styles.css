@@ -5,7 +5,7 @@
 
 .rec.rec-arrow {
   border-radius: 0;
-  background-color: #ff0021;
+  background-color: #ed9121;
   color: #eeeeee;
 }
 
@@ -19,9 +19,11 @@
   visibility: hidden;
 }
 
+
 button.rec-dot{
   background-color: #eeeeee;
   box-shadow: 0 0 1px 3px #222831;
+  display: none;
 }
 
 

@@ -6,7 +6,11 @@ export const GlobalStyle = createGlobalStyle `
   margin: 0;
   padding: 0;
   font-family: 'Montserrat' , sans-serif;
-  ${'' /* overflow-x: hidden; */}
+
+  @media screen and (max-width: 480px) {
+    overflow-x: hidden;
+  }
+
 }
 
 .rec-carousel-item:focus {

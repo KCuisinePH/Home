@@ -28,13 +28,13 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <Menu heading="Our Amazing Product" data={menuData} id={Menu}/>
+      <Menu heading="Our Amazing Products" data={menuData} id={Menu}/>
       <InfoSection {...homeObjOne} />
       <Menu heading="Party Sizes" data={partySizes}/>
       <InfoSection {...howToOrder} />
       <Gallery heading="Gallery"></Gallery>
       <InfoSection {...freeDelivery} />
-      <Testimonial heading="Check what our Customer Says about us" data={testiMonialData} imgStart={imgStart}></Testimonial>
+      <Testimonial heading="Reviews" data={testiMonialData} imgStart={imgStart}></Testimonial>
       <Footer />
       <GlobalStyle />
     </>

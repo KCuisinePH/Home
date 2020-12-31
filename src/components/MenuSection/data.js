@@ -1,9 +1,14 @@
-import bibimbap from '../../images/BIBIMBAP3.png'
-import japchae from '../../images/JAPCHAE.png'
-import tteokbokki from '../../images/TTEOKBOKKI.png'
-import chicken from '../../images/Chicken1.png'
-import gimbap from '../../images/GIMBAP.png'
-import sushi from '../../images/SUSHI.png'
+import bibimbap from '../../images/new/bibimbap.png'
+import japchae from '../../images/new/Japchae.png'
+import tteokbokki from '../../images/new/tteokboki.png'
+import chicken from '../../images/new/chicken.png'
+import spicyChicken from '../../images/new/chicken2.png'
+import gimbap from '../../images/new/gimbap.png'
+import sushi from '../../images/new/bakedSushiRound.png'
+import garlicBread from '../../images/new/garlic_bread.png'
+import koreanGarlicBread from '../../images/new/garlic_bread_2.png'
+import squareSushi from '../../images/new/square_sushi.png'
+import kimchi from '../../images/new/KIMCHI.png'
 
 
 export const menuData = [
@@ -11,7 +16,7 @@ export const menuData = [
     img: bibimbap,
     alt: 'bibimbap',
     name: 'Bibimbap',
-    desc: `Good For 2 - 3 Persons  \n-` ,
+    desc: `Good For Sharing  \n-` ,
     price: '₱150',
     button: 'Read More',
     modalHeading: 'BIBIMBAP',
@@ -34,7 +39,7 @@ export const menuData = [
     img: tteokbokki,
     alt: 'Tteokbokki',
     name: 'Tteokbokki',
-    desc: `Good For 2 - 3 Persons  \n-` ,
+    desc: `Good For Sharing \n-` ,
     price: '₱150',
     button: 'Read More',
     modalHeading: 'CLASSIC TTEOKBOKKI',
@@ -54,7 +59,7 @@ export const menuData = [
   }, 
 
   {
-    img: sushi,
+    img: squareSushi,
     alt: 'Sushi',
     name: 'Baked Sushi',
     desc: 'square 8" with 2 Free Seaweed Pack',
@@ -69,7 +74,7 @@ export const menuData = [
     img: gimbap,
     alt: 'gimbap',
     name: 'Gimbap',
-    desc: `Good For 2 - 3 Persons  \n-`,
+    desc: `Good For Sharing  \n-`,
     price: '₱150',
     button: 'Read More',
     modalHeading: 'GIMBAP',
@@ -77,11 +82,11 @@ export const menuData = [
   },
 
   {
-    img: tteokbokki,
+    img: kimchi,
     alt: 'Tteokbokki',
     name: 'Kimchi',
     desc: `400 grams \n-`,
-    price: '₱100',
+    price: '₱120',
     button: 'Read More',
     modalHeading: 'KIMCHI',
     modalDescription: 'is the food where South Korea is known for. This is one the Korean’s favorite food and side dish in every meal that can’t be serve without it. Kimchi is a spicy Korean side dish created from salted, fermented vegetables, usually cabbage and radishes. It gets its unique kick from a paste made of chili powder, garlic, ginger, red pepper and honey. Its recognizable taste from fish sauce. salty, spicy fermented cabbage that’s packed with flavor and umami funk. The more it is fermented the more the taste will come out.',
@@ -93,23 +98,47 @@ export const menuData = [
     img: chicken,
     alt: 'Chicken',
     name: 'Honey Garlic Chicken',
-    desc: 'Good for 2 person',
-    price: '₱150',
+    desc: 'Good for Sharing',
+    price: '₱170',
     button: 'Read More',
     modalHeading: 'HONEY GARLIC CHICKEN',
     modalDescription: 'is the all-time favorite food, not only in South Korea but all over the world. It is basically a fried chicken coated with flavorful sauce. The chicken is marinated with special seasoning, coated with our very own breading mix and dip fry to make it crispy and juicy. Honey Garlic Chicken is also coated with Honey Garlic sauce to boost its sweet and flavorful taste.',
   },
 
+  
+  {
+    img: garlicBread,
+    alt: 'Garlic Bread',
+    name: 'Korean Garlic Bread',
+    desc: 'with Cream Cheese',
+    price: '₱120',
+    button: 'Read More',
+    modalHeading: 'KOREAN GARLIC BREAD',
+    modalDescription: 'with Cream cheese is not your ordinary bread! This one has a perfectly crunchy exterior with perfectly combined overloaded cream cheese while the interior is kind of soft and chewy like good bread should have that will satisfy your sweet-garlicy craving!.',
+  },
+
     
   {
-    img: chicken,
+    img: spicyChicken,
     alt: 'Chicken',
     name: 'Spicy Garlic Chicken',
-    desc: 'Good for 2 person',
-    price: '₱150',
+    desc: 'Good for Sharing',
+    price: '₱170',
     button: 'Read More',
     modalHeading: 'SPICY GARLIC CHICKEN',
     modalDescription: 'same with Honey Garlic Chicken. it is also fried chicken coated with spicy sauce. The very difference from honey Garlic is the mouthwatering spiciness of this dish. It is slightly sweet with a taste of flavorful garlic but the spicy flavor really kicks into your mouth!',
   },
+
+  {
+    img: koreanGarlicBread,
+    alt: 'Garlic Bread',
+    name: 'Korean Garlic Bread',
+    desc: 'with Cream Cheese',
+    price: '₱200',
+    button: 'Read More',
+    modalHeading: 'KOREAN GARLIC BREAD',
+    modalDescription: 'with Cream cheese is not your ordinary bread! This one has a perfectly crunchy exterior with perfectly combined overloaded cream cheese while the interior is kind of soft and chewy like good bread should have that will satisfy your sweet-garlicy craving!.',
+  },
+
 
 ]
